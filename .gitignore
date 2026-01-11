@@ -1,0 +1,18 @@
+# Simulation generated files (Cadence / Xcelium)
+INCA_libs/
+xcelium.d/
+wave.shm/
+.simvision/
+.bpad/
+
+# Logs & databases
+*.log
+*.db
+*.pak
+*.lock
+*.ts
+*.history
+
+# Temp files
+*.tmp
+*.bak
