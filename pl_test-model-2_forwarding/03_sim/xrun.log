@@ -1,0 +1,112 @@
+xrun(64): 24.09-s005: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s005: Started on Jan 11, 2026 at 12:56:35 +07
+xrun
+	-access +rwc
+	-f ./flist.f
+		-sv
+		-timescale 1ns/100ps
+		./../00_src/addsub32.sv
+		./../00_src/alu.sv
+		./../00_src/brc.sv
+		./../00_src/EX_MEM.sv
+		./../00_src/hazard_fwd_unit.sv
+		./../00_src/ID_EX.sv
+		./../00_src/IF_ID.sv
+		./../00_src/imm_gen.sv
+		./../00_src/instruction_memory.sv
+		./../00_src/lsu.sv
+		./../00_src/memory.sv
+		./../00_src/MEM_WB.sv
+		./../00_src/pipelined.sv
+		./../00_src/regfile.sv
+		./../01_bench/driver.sv
+		./../01_bench/scoreboard.sv
+		./../01_bench/tbench.sv
+		./../01_bench/tlib.svh
+Recompiling... reason: unable to stat '/./home/yellow/ee3201_19/Documents/LAB/lab1/bai2/end/2_forwarding_pass/00_src/EX_MEM.sv'.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x7d88853b
+		tbench
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                  24      17
+		Registers:               308     287
+		Scalar wires:            143       -
+		Vectored wires:          265       -
+		Always blocks:            43      36
+		Initial blocks:            9       9
+		Cont. assignments:        59      80
+		Pseudo assignments:      190       -
+		Compilation units:         1       1
+		Process Clocks:           12       3
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.tbench:sv
+Loading snapshot worklib.tbench:sv .................... Done
+xcelium> source /home/yellow/ktmt_l01_l02_4/tools/eda/cadence/XCELIUM2409/tools/xcelium/files/xmsimrc
+xcelium> run
+[instruction_memory] Loading ./../02_test/isa_4b.hex
+[SUCCESS] Memory[0] loaded: 00007137
+
+PIPELINE - ISA tests
+
+add......PASS
+addi.....PASS
+sub......PASS
+and......PASS
+andi.....PASS
+or.......PASS
+ori......PASS
+xor......PASS
+xori.....PASS
+slt......PASS
+slti.....PASS
+sltu.....PASS
+sltiu....PASS
+sll......PASS
+slli.....PASS
+srl......PASS
+srli.....PASS
+sra......PASS
+srai.....PASS
+lw.......PASS
+lh.......PASS
+lhu......PASS
+lb.......PASS
+lbu......PASS
+sw.......PASS
+sh.......PASS
+sb.......PASS
+auipc....PASS
+lui......PASS
+beq......PASS
+bne......PASS
+blt......PASS
+bltu.....PASS
+bge......PASS
+bgeu.....PASS
+jal......PASS
+jalr.....PASS
+malgn....PASS
+iosw.....PASS
+
+=================== Result ===================
+Total Clock Cycles Executed = 7829
+Total Instructions Executed = 4826
+Total Branch Instructions   = 1602
+Total Branch Mispredictions = 1449
+
+----------------------------------------------
+Instruction Per Cycle (IPC) = 0.62
+Branch Misprediction Rate   = 90.45 %
+
+END of ISA tests
+
+Simulation complete via $finish(1) at time 31368 NS + 1
+/home/yellow/ee3201_19/Documents/LAB/lab1/bai2/end/2_forwarding_pass/01_bench/scoreboard.sv:85 
+xcelium> exit
+TOOL:	xrun(64)	24.09-s005: Exiting on Jan 11, 2026 at 12:56:38 +07  (total: 00:00:03)

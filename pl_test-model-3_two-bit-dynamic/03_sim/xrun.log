@@ -1,0 +1,215 @@
+xrun(64): 24.09-s005: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s005: Started on Dec 16, 2025 at 22:41:56 +07
+xrun
+	-access +rwc
+	-f ./flist.f
+		-sv
+		-timescale 1ns/100ps
+		./../00_src/addsub32.sv
+		./../00_src/alu.sv
+		./../00_src/branch_predictor.sv
+		./../00_src/brc.sv
+		./../00_src/EX_MEM.sv
+		./../00_src/hazard_fwd_unit.sv
+		./../00_src/ID_EX.sv
+		./../00_src/IF_ID.sv
+		./../00_src/imm_gen.sv
+		./../00_src/instruction_memory.sv
+		./../00_src/lsu.sv
+		./../00_src/memory.sv
+		./../00_src/MEM_WB.sv
+		./../00_src/pipelined.sv
+		./../00_src/regfile.sv
+		./../01_bench/driver.sv
+		./../01_bench/scoreboard.sv
+		./../01_bench/tbench.sv
+		./../01_bench/tlib.svh
+file: ./../00_src/addsub32.sv
+	module worklib.addsub32:sv
+		errors: 0, warnings: 0
+file: ./../00_src/alu.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: ./../00_src/branch_predictor.sv
+	module worklib.branch_predictor:sv
+		errors: 0, warnings: 0
+file: ./../00_src/brc.sv
+	module worklib.brc:sv
+		errors: 0, warnings: 0
+file: ./../00_src/EX_MEM.sv
+	module worklib.EX_MEM:sv
+		errors: 0, warnings: 0
+file: ./../00_src/hazard_fwd_unit.sv
+	module worklib.hazard_fwd_unit:sv
+		errors: 0, warnings: 0
+file: ./../00_src/ID_EX.sv
+	module worklib.ID_EX:sv
+		errors: 0, warnings: 0
+file: ./../00_src/IF_ID.sv
+	module worklib.IF_ID:sv
+		errors: 0, warnings: 0
+file: ./../00_src/imm_gen.sv
+	module worklib.imm_gen:sv
+		errors: 0, warnings: 0
+file: ./../00_src/instruction_memory.sv
+	module worklib.instruction_memory:sv
+		errors: 0, warnings: 0
+file: ./../00_src/lsu.sv
+	module worklib.lsu:sv
+		errors: 0, warnings: 0
+file: ./../00_src/memory.sv
+	module worklib.memory:sv
+		errors: 0, warnings: 0
+file: ./../00_src/MEM_WB.sv
+	module worklib.MEM_WB:sv
+		errors: 0, warnings: 0
+file: ./../00_src/pipelined.sv
+	module worklib.pipelined:sv
+		errors: 0, warnings: 0
+file: ./../00_src/regfile.sv
+	module worklib.regfile:sv
+		errors: 0, warnings: 0
+file: ./../01_bench/driver.sv
+	module worklib.driver:sv
+		errors: 0, warnings: 0
+file: ./../01_bench/scoreboard.sv
+	module worklib.scoreboard:sv
+		errors: 0, warnings: 0
+file: ./../01_bench/tbench.sv
+	module worklib.tbench:sv
+		errors: 0, warnings: 0
+file: ./../01_bench/tlib.svh
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  instruction_memory u_imem ( // IMEM synchronous
+                          |
+xmelab: *W,CUVWSI (../00_src/pipelined.sv,124|26): 3 input ports were not connected:
+xmelab: (../00_src/instruction_memory.sv,7): i_wdata
+xmelab: (../00_src/instruction_memory.sv,8): i_bmask
+xmelab: (../00_src/instruction_memory.sv,9): i_wren
+
+	Top level design units:
+		$unit_0x7107809c
+		tbench
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.scoreboard:sv <0x6c4a3666>
+			streams:   7, words: 10981
+		worklib.driver:sv <0x016e1a6d>
+			streams:   1, words:   210
+		worklib.MEM_WB:sv <0x5342f7b6>
+			streams:   4, words:  3987
+		worklib.memory:sv <0x20d459b8>
+			streams:  24, words: 10246
+		worklib.lsu:sv <0x5c761d7d>
+			streams:  27, words: 21669
+		worklib.EX_MEM:sv <0x4048a872>
+			streams:   8, words:  6023
+		worklib.brc:sv <0x1d9d5f5a>
+			streams:   8, words:  2625
+		worklib.addsub32:sv <0x03364c6b>
+			streams:   1, words: 16368
+		worklib.alu:sv <0x26eacae6>
+			streams:  27, words: 10874
+		worklib.hazard_fwd_unit:sv <0x316a547b>
+			streams:  11, words:  3594
+		worklib.ID_EX:sv <0x18a17db4>
+			streams:   4, words:  7800
+		worklib.branch_predictor:sv <0x645da3ef>
+			streams:  13, words:  7335
+		worklib.imm_gen:sv <0x2b6d7751>
+			streams:   2, words:  2549
+		worklib.regfile:sv <0x79ea6381>
+			streams:   5, words:  2766
+		worklib.IF_ID:sv <0x303db3e3>
+			streams:   3, words:   796
+		worklib.instruction_memory:sv <0x6a06b28b>
+			streams:   8, words:  7002
+		worklib.addsub32:sv <0x1ac58e92>
+			streams:   1, words: 16193
+		worklib.pipelined:sv <0x7c241b46>
+			streams: 181, words: 74822
+		worklib.tbench:sv <0x281dc384>
+			streams:  38, words:  9708
+		worklib.\$unit_0x7107809c :compilation_unit <0x383e2950>
+			streams:   3, words:  6069
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                  31      18
+		Registers:               342     303
+		Scalar wires:            172       -
+		Vectored wires:          289       -
+		Always blocks:            51      38
+		Initial blocks:            9       9
+		Cont. assignments:        73      93
+		Pseudo assignments:      205       -
+		Compilation units:         1       1
+		Process Clocks:           12       3
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.tbench:sv
+Loading snapshot worklib.tbench:sv .................... Done
+xcelium> source /home/yellow/ktmt_l01_l02_4/tools/eda/cadence/XCELIUM2409/tools/xcelium/files/xmsimrc
+xcelium> run
+[instruction_memory] Loading ./../02_test/isa_4b.hex
+[SUCCESS] Memory[0] loaded: 00007137
+
+PIPELINE - ISA tests
+
+add......PASS
+addi.....PASS
+sub......PASS
+and......PASS
+andi.....PASS
+or.......PASS
+ori......PASS
+xor......PASS
+xori.....PASS
+slt......PASS
+slti.....PASS
+sltu.....PASS
+sltiu....PASS
+sll......PASS
+slli.....PASS
+srl......PASS
+srli.....PASS
+sra......PASS
+srai.....PASS
+lw.......PASS
+lh.......PASS
+lhu......PASS
+lb.......PASS
+lbu......PASS
+sw.......PASS
+sh.......PASS
+sb.......PASS
+auipc....PASS
+lui......PASS
+beq......PASS
+bne......PASS
+blt......PASS
+bltu.....PASS
+bge......PASS
+bgeu.....PASS
+jal......PASS
+jalr.....PASS
+malgn....PASS
+iosw.....PASS
+
+=================== Result ===================
+Total Clock Cycles Executed = 5743
+Total Instructions Executed = 4929
+Total Branch Instructions   = 1602
+Total Branch Mispredictions = 709
+
+----------------------------------------------
+Instruction Per Cycle (IPC) = 0.86
+Branch Misprediction Rate   = 44.26 %
+
+END of ISA tests
+
+Simulation complete via $finish(1) at time 23024 NS + 1
+../01_bench/scoreboard.sv:85         $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.09-s005: Exiting on Dec 16, 2025 at 22:42:00 +07  (total: 00:00:04)

@@ -1,0 +1,376 @@
+irun: 10.20-s100: (c) Copyright 1995-2011 Cadence Design Systems, Inc.
+TOOL:	irun	10.20-s100: Started on Dec 12, 2025 at 14:12:31 BDT
+irun
+	-access +rwc
+	-f ./flist.f
+		-sv
+		-timescale 1ns/100ps
+		./../00_src/addsub32.sv
+		./../00_src/alu.sv
+		./../00_src/branch_predictor.sv
+		./../00_src/brc.sv
+		./../00_src/EX_MEM.sv
+		./../00_src/hazard_fwd_unit.sv
+		./../00_src/ID_EX.sv
+		./../00_src/IF_ID.sv
+		./../00_src/imm_gen.sv
+		./../00_src/instruction_memory.sv
+		./../00_src/lsu.sv
+		./../00_src/memory.sv
+		./../00_src/MEM_WB.sv
+		./../00_src/pipelined.sv
+		./../00_src/regfile.sv
+		./../01_bench/driver.sv
+		./../01_bench/scoreboard.sv
+		./../01_bench/tbench.sv
+		./../01_bench/tlib.svh
+Recompiling... reason: file '../00_src/branch_predictor.sv' is newer than expected.
+	expected: Fri Dec 12 14:11:20 2025
+	actual:   Fri Dec 12 14:12:29 2025
+file: ./../00_src/branch_predictor.sv
+	module worklib.branch_predictor:sv
+		errors: 0, warnings: 0
+file: ./../00_src/hazard_fwd_unit.sv
+  // Sử dụng Reduction OR (|): Nếu có bất kỳ bit nào là 1, kết quả là 1.
+      |
+ncvlog: *W,NONPRT (./../00_src/hazard_fwd_unit.sv,36|6): non-printable character (0xe1) ignored.
+  // Sử dụng Reduction OR (|): Nếu có bất kỳ bit nào là 1, kết quả là 1.
+       |
+ncvlog: *W,NONPRT (./../00_src/hazard_fwd_unit.sv,36|7): non-printable character (0xbb) ignored.
+  // Sử dụng Reduction OR (|): Nếu có bất kỳ bit nào là 1, kết quả là 1.
+        |
+ncvlog: *W,NONPRT (./../00_src/hazard_fwd_unit.sv,36|8): non-printable character (0xad) ignored.
+file: ./../00_src/IF_ID.sv
+  input  logic [31:0] i_pc,        // Đã được delay 1 chu kỳ từ pipelined.sv
+                                      |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,12|38): non-printable character (0xc4) ignored.
+  input  logic [31:0] i_pc,        // Đã được delay 1 chu kỳ từ pipelined.sv
+                                       |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,12|39): non-printable character (0x90) ignored.
+  input  logic [31:0] i_pc,        // Đã được delay 1 chu kỳ từ pipelined.sv
+                                        |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,12|40): non-printable character (0xc3) ignored.
+  input  logic [31:0] i_pc,        // Đã được delay 1 chu kỳ từ pipelined.sv
+                                         |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,12|41): non-printable character (0xa3) ignored.
+  input  logic [31:0] i_pc,        // Đã được delay 1 chu kỳ từ pipelined.sv
+                                           |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,12|43): non-printable character (0xc4) ignored.
+  input  logic [31:0] i_pc,        // Đã được delay 1 chu kỳ từ pipelined.sv
+                                            |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,12|44): non-printable character (0x91) ignored.
+  input  logic [31:0] i_pc,        // Đã được delay 1 chu kỳ từ pipelined.sv
+                                             |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,12|45): non-printable character (0xc6) ignored.
+  input  logic [31:0] i_pc,        // Đã được delay 1 chu kỳ từ pipelined.sv
+                                              |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,12|46): non-printable character (0xb0) ignored.
+  input  logic [31:0] i_pc,        // Đã được delay 1 chu kỳ từ pipelined.sv
+                                               |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,12|47): non-printable character (0xe1) ignored.
+  input  logic [31:0] i_pc,        // Đã được delay 1 chu kỳ từ pipelined.sv
+                                                |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,12|48): non-printable character (0xbb) ignored.
+  input  logic [31:0] i_pc,        // Đã được delay 1 chu kỳ từ pipelined.sv
+                                                 |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,12|49): non-printable character (0xa3) ignored.
+  input  logic [31:0] i_instr,     // Đã được latch trong instruction_memory
+                                      |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,13|38): non-printable character (0xc4) ignored.
+  input  logic [31:0] i_instr,     // Đã được latch trong instruction_memory
+                                       |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,13|39): non-printable character (0x90) ignored.
+  input  logic [31:0] i_instr,     // Đã được latch trong instruction_memory
+                                        |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,13|40): non-printable character (0xc3) ignored.
+  input  logic [31:0] i_instr,     // Đã được latch trong instruction_memory
+                                         |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,13|41): non-printable character (0xa3) ignored.
+  input  logic [31:0] i_instr,     // Đã được latch trong instruction_memory
+                                           |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,13|43): non-printable character (0xc4) ignored.
+  input  logic [31:0] i_instr,     // Đã được latch trong instruction_memory
+                                            |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,13|44): non-printable character (0x91) ignored.
+  input  logic [31:0] i_instr,     // Đã được latch trong instruction_memory
+                                             |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,13|45): non-printable character (0xc6) ignored.
+  input  logic [31:0] i_instr,     // Đã được latch trong instruction_memory
+                                              |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,13|46): non-printable character (0xb0) ignored.
+  input  logic [31:0] i_instr,     // Đã được latch trong instruction_memory
+                                               |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,13|47): non-printable character (0xe1) ignored.
+  input  logic [31:0] i_instr,     // Đã được latch trong instruction_memory
+                                                |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,13|48): non-printable character (0xbb) ignored.
+  input  logic [31:0] i_instr,     // Đã được latch trong instruction_memory
+                                                 |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,13|49): non-printable character (0xa3) ignored.
+  // Không dùng always_ff cho instruction và PC để tránh trễ 2 chu kỳ.
+       |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,22|7): non-printable character (0xc3) ignored.
+  // Không dùng always_ff cho instruction và PC để tránh trễ 2 chu kỳ.
+        |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,22|8): non-printable character (0xb4) ignored.
+  // Nếu Flush hoặc đang Reset -> chèn lệnh NOP (addi x0, x0, 0 = 0x00000013)
+      |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,23|6): non-printable character (0xe1) ignored.
+  // Nếu Flush hoặc đang Reset -> chèn lệnh NOP (addi x0, x0, 0 = 0x00000013)
+       |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,23|7): non-printable character (0xba) ignored.
+  // Nếu Flush hoặc đang Reset -> chèn lệnh NOP (addi x0, x0, 0 = 0x00000013)
+        |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,23|8): non-printable character (0xbf) ignored.
+  // Ngược lại -> cho lệnh đi qua (Pass-through)
+       |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,24|7): non-printable character (0xc6) ignored.
+  // Ngược lại -> cho lệnh đi qua (Pass-through)
+        |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,24|8): non-printable character (0xb0) ignored.
+  // Ngược lại -> cho lệnh đi qua (Pass-through)
+         |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,24|9): non-printable character (0xe1) ignored.
+  // Ngược lại -> cho lệnh đi qua (Pass-through)
+          |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,24|10): non-printable character (0xbb) ignored.
+  // Ngược lại -> cho lệnh đi qua (Pass-through)
+           |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,24|11): non-printable character (0xa3) ignored.
+  // Tín hiệu Valid: Hợp lệ khi không Reset và không Flush
+      |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,28|6): non-printable character (0xc3) ignored.
+  // Tín hiệu Valid: Hợp lệ khi không Reset và không Flush
+       |
+ncvlog: *W,NONPRT (./../00_src/IF_ID.sv,28|7): non-printable character (0xad) ignored.
+file: ./../00_src/instruction_memory.sv
+      // đọc đồng bộ
+         |
+ncvlog: *W,NONPRT (./../00_src/instruction_memory.sv,48|9): non-printable character (0xc4) ignored.
+      // đọc đồng bộ
+          |
+ncvlog: *W,NONPRT (./../00_src/instruction_memory.sv,48|10): non-printable character (0x91) ignored.
+      // đọc đồng bộ
+           |
+ncvlog: *W,NONPRT (./../00_src/instruction_memory.sv,48|11): non-printable character (0xe1) ignored.
+      // đọc đồng bộ
+            |
+ncvlog: *W,NONPRT (./../00_src/instruction_memory.sv,48|12): non-printable character (0xbb) ignored.
+      // đọc đồng bộ
+             |
+ncvlog: *W,NONPRT (./../00_src/instruction_memory.sv,48|13): non-printable character (0x8d) ignored.
+file: ./../00_src/memory.sv
+  // Khối initial 
+       |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,18|7): non-printable character (0xe1) ignored.
+  // Khối initial 
+        |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,18|8): non-printable character (0xbb) ignored.
+  // Khối initial 
+         |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,18|9): non-printable character (0x91) ignored.
+  // Dây nối tạm cho kết quả 32-bit từ bộ cộng
+      |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,27|6): non-printable character (0xc3) ignored.
+  // Dây nối tạm cho kết quả 32-bit từ bộ cộng
+       |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,27|7): non-printable character (0xa2) ignored.
+    .i_a    ( { {(32-ADDR_W){1'b0}}, i_addr } ), // Mở rộng i_addr lên 32-bit
+                                                     |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,36|53): non-printable character (0xe1) ignored.
+    .i_a    ( { {(32-ADDR_W){1'b0}}, i_addr } ), // Mở rộng i_addr lên 32-bit
+                                                      |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,36|54): non-printable character (0xbb) ignored.
+    .i_a    ( { {(32-ADDR_W){1'b0}}, i_addr } ), // Mở rộng i_addr lên 32-bit
+                                                       |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,36|55): non-printable character (0x9f) ignored.
+  assign a1 = a1_32[ADDR_W-1:0]; // Cắt lại về 16-bit
+                                     |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,42|37): non-printable character (0xe1) ignored.
+  assign a1 = a1_32[ADDR_W-1:0]; // Cắt lại về 16-bit
+                                      |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,42|38): non-printable character (0xba) ignored.
+  assign a1 = a1_32[ADDR_W-1:0]; // Cắt lại về 16-bit
+                                       |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,42|39): non-printable character (0xaf) ignored.
+      // Sử dụng if riêng biệt thay vì logic shift
+          |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,103|10): non-printable character (0xe1) ignored.
+      // Sử dụng if riêng biệt thay vì logic shift
+           |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,103|11): non-printable character (0xbb) ignored.
+      // Sử dụng if riêng biệt thay vì logic shift
+            |
+ncvlog: *W,NONPRT (./../00_src/memory.sv,103|12): non-printable character (0xad) ignored.
+file: ./../00_src/MEM_WB.sv
+  input  logic        i_stall,     // thường = 0
+                                        |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,8|40): non-printable character (0xc6) ignored.
+  input  logic        i_stall,     // thường = 0
+                                         |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,8|41): non-printable character (0xb0) ignored.
+  input  logic        i_stall,     // thường = 0
+                                          |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,8|42): non-printable character (0xe1) ignored.
+  input  logic        i_stall,     // thường = 0
+                                           |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,8|43): non-printable character (0xbb) ignored.
+  input  logic        i_stall,     // thường = 0
+                                            |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,8|44): non-printable character (0x9d) ignored.
+  input  logic        i_flush,     // nếu muốn bubble ở WB
+                                       |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,9|39): non-printable character (0xe1) ignored.
+  input  logic        i_flush,     // nếu muốn bubble ở WB
+                                        |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,9|40): non-printable character (0xba) ignored.
+  input  logic        i_flush,     // nếu muốn bubble ở WB
+                                         |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,9|41): non-printable character (0xbf) ignored.
+  input  logic [31:0] i_mem_data,  // Dữ liệu từ LSU (đã latch trong memory)
+                                       |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,16|39): non-printable character (0xe1) ignored.
+  input  logic [31:0] i_mem_data,  // Dữ liệu từ LSU (đã latch trong memory)
+                                        |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,16|40): non-printable character (0xbb) ignored.
+  input  logic [31:0] i_mem_data,  // Dữ liệu từ LSU (đã latch trong memory)
+                                         |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,16|41): non-printable character (0xaf) ignored.
+      // giữ nguyên các bus data để tránh X-prop
+           |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,56|11): non-printable character (0xe1) ignored.
+      // giữ nguyên các bus data để tránh X-prop
+            |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,56|12): non-printable character (0xbb) ignored.
+      // giữ nguyên các bus data để tránh X-prop
+             |
+ncvlog: *W,NONPRT (./../00_src/MEM_WB.sv,56|13): non-printable character (0xaf) ignored.
+file: ./../00_src/regfile.sv
+    // Khởi tạo
+         |
+ncvlog: *W,NONPRT (./../00_src/regfile.sv,20|9): non-printable character (0xe1) ignored.
+    // Khởi tạo
+          |
+ncvlog: *W,NONPRT (./../00_src/regfile.sv,20|10): non-printable character (0xbb) ignored.
+    // Khởi tạo
+           |
+ncvlog: *W,NONPRT (./../00_src/regfile.sv,20|11): non-printable character (0x9f) ignored.
+    // ĐỌC: Logic tổ hợp có tích hợp Internal Forwarding
+       |
+ncvlog: *W,NONPRT (./../00_src/regfile.sv,33|7): non-printable character (0xc4) ignored.
+    // ĐỌC: Logic tổ hợp có tích hợp Internal Forwarding
+        |
+ncvlog: *W,NONPRT (./../00_src/regfile.sv,33|8): non-printable character (0x90) ignored.
+    // ĐỌC: Logic tổ hợp có tích hợp Internal Forwarding
+         |
+ncvlog: *W,NONPRT (./../00_src/regfile.sv,33|9): non-printable character (0xe1) ignored.
+    // ĐỌC: Logic tổ hợp có tích hợp Internal Forwarding
+          |
+ncvlog: *W,NONPRT (./../00_src/regfile.sv,33|10): non-printable character (0xbb) ignored.
+    // ĐỌC: Logic tổ hợp có tích hợp Internal Forwarding
+           |
+ncvlog: *W,NONPRT (./../00_src/regfile.sv,33|11): non-printable character (0x8c) ignored.
+    // Nếu đang ghi vào đúng thanh ghi muốn đọc -> Lấy ngay giá trị đang ghi (Bypass)
+        |
+ncvlog: *W,NONPRT (./../00_src/regfile.sv,34|8): non-printable character (0xe1) ignored.
+    // Nếu đang ghi vào đúng thanh ghi muốn đọc -> Lấy ngay giá trị đang ghi (Bypass)
+         |
+ncvlog: *W,NONPRT (./../00_src/regfile.sv,34|9): non-printable character (0xba) ignored.
+    // Nếu đang ghi vào đúng thanh ghi muốn đọc -> Lấy ngay giá trị đang ghi (Bypass)
+          |
+ncvlog: *W,NONPRT (./../00_src/regfile.sv,34|10): non-printable character (0xbf) ignored.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  instruction_memory u_imem ( // IMEM synchronous
+                          |
+ncelab: *W,CUVWSI (../00_src/pipelined.sv,127|26): 3 input ports were not connected:
+ncelab: (../00_src/instruction_memory.sv,7): i_wdata
+ncelab: (../00_src/instruction_memory.sv,8): i_bmask
+ncelab: (../00_src/instruction_memory.sv,9): i_wren
+
+	Top level design units:
+		$unit_0x7107809c
+		tbench
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.branch_predictor:sv <0x1df223f9>
+			streams:  14, words:  4584
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                  31      18
+		Registers:               352     313
+		Scalar wires:            184       -
+		Vectored wires:          300       -
+		Always blocks:            51      38
+		Initial blocks:            9       9
+		Cont. assignments:        77      98
+		Pseudo assignments:      214     214
+		Compilation units:         1       1
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.tbench:sv
+Loading snapshot worklib.tbench:sv .................... Done
+ncsim> source /home/buet/cadence/installs/INCISIV102/tools/inca/files/ncsimrc
+ncsim> run
+[instruction_memory] Loading ./../02_test/isa_4b.hex
+[SUCCESS] Memory[0] loaded: 00007137
+
+PIPELINE - ISA tests
+
+add......PASS
+addi.....PASS
+sub......PASS
+and......PASS
+andi.....PASS
+or.......PASS
+ori......PASS
+xor......PASS
+xori.....PASS
+slt......PASS
+slti.....PASS
+sltu.....PASS
+sltiu....PASS
+sll......PASS
+slli.....PASS
+srl......PASS
+srli.....PASS
+sra......PASS
+srai.....PASS
+lw.......PASS
+lh.......PASS
+lhu......PASS
+lb.......PASS
+lbu......PASS
+sw.......PASS
+sh.......PASS
+sb.......PASS
+auipc....PASS
+lui......PASS
+beq......PASS
+bne......PASS
+blt......PASS
+bltu.....PASS
+bge......PASS
+bgeu.....PASS
+jal......PASS
+jalr.....PASS
+malgn....PASS
+iosw.....PASS
+
+=================== Result ===================
+Total Clock Cycles Executed = 5743
+Total Instructions Executed = 4929
+Total Branch Instructions   = 1602
+Total Branch Mispredictions = 46
+
+----------------------------------------------
+Instruction Per Cycle (IPC) = 0.86
+Branch Misprediction Rate   = 2.87 %
+
+END of ISA tests
+
+Simulation complete via $finish(1) at time 23024 NS + 1
+../01_bench/scoreboard.sv:85         $finish;
+ncsim> exit
+TOOL:	irun	10.20-s100: Exiting on Dec 12, 2025 at 14:12:34 BDT  (total: 00:00:03)

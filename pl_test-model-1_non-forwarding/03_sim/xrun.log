@@ -1,0 +1,124 @@
+xrun(64): 24.09-s005: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s005: Started on Dec 16, 2025 at 22:41:16 +07
+xrun
+	-access +rwc
+	-f ./flist.f
+		-sv
+		-timescale 1ns/100ps
+		./../00_src/addsub32.sv
+		./../00_src/alu.sv
+		./../00_src/brc.sv
+		./../00_src/EX_MEM.sv
+		./../00_src/ID_EX.sv
+		./../00_src/IF_ID.sv
+		./../00_src/imm_gen.sv
+		./../00_src/instruction_memory.sv
+		./../00_src/lsu.sv
+		./../00_src/memory.sv
+		./../00_src/MEM_WB.sv
+		./../00_src/pipelined.sv
+		./../00_src/regfile.sv
+		./../01_bench/driver.sv
+		./../01_bench/scoreboard.sv
+		./../01_bench/tbench.sv
+		./../01_bench/tlib.svh
+file: ./../00_src/pipelined.sv
+	module worklib.pipelined:sv
+		errors: 0, warnings: 0
+file: ./../01_bench/tlib.svh
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+xmelab: *W,CUVWSP (/home/yellow/ee3201_19/Documents/M3_dmem_sync_read/1_non-forwarding_pass/00_src/lsu.sv,68|48): 1 output port was not connected:
+xmelab: (/home/yellow/ee3201_19/Documents/LAB/lab1/bai2/end/1_non-forwarding_pass/00_src/memory.sv,13): o_rdata2
+
+xmelab: *W,CUVWSI (/home/yellow/ee3201_19/Documents/M3_dmem_sync_read/1_non-forwarding_pass/00_src/lsu.sv,68|48): 1 input port was not connected:
+xmelab: (/home/yellow/ee3201_19/Documents/LAB/lab1/bai2/end/1_non-forwarding_pass/00_src/memory.sv,8): i_addr2
+
+	Top level design units:
+		$unit_0x65adb2de
+		tbench
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.pipelined:sv <0x74cd7429>
+			streams: 153, words: 63055
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                  23      16
+		Registers:               293     272
+		Scalar wires:            138       -
+		Expanded wires:           32       1
+		Vectored wires:          244       -
+		Always blocks:            37      30
+		Initial blocks:            9       9
+		Cont. assignments:        58      76
+		Pseudo assignments:      177       -
+		Compilation units:         1       1
+		Process Clocks:           11       3
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.tbench:sv
+Loading snapshot worklib.tbench:sv .................... Done
+xcelium> source /home/yellow/ktmt_l01_l02_4/tools/eda/cadence/XCELIUM2409/tools/xcelium/files/xmsimrc
+xcelium> run
+[instruction_memory] Loading ./../02_test/isa_4b.hex
+[SUCCESS] Memory[0] loaded: 00007137
+
+PIPELINE - ISA tests
+
+add......PASS
+addi.....PASS
+sub......PASS
+and......PASS
+andi.....PASS
+or.......PASS
+ori......PASS
+xor......PASS
+xori.....PASS
+slt......PASS
+slti.....PASS
+sltu.....PASS
+sltiu....PASS
+sll......PASS
+slli.....PASS
+srl......PASS
+srli.....PASS
+sra......PASS
+srai.....PASS
+lw.......PASS
+lh.......PASS
+lhu......PASS
+lb.......PASS
+lbu......PASS
+sw.......PASS
+sh.......PASS
+sb.......PASS
+auipc....PASS
+lui......PASS
+beq......PASS
+bne......PASS
+blt......PASS
+bltu.....PASS
+bge......PASS
+bgeu.....PASS
+jal......PASS
+jalr.....PASS
+malgn....PASS
+iosw.....PASS
+
+=================== Result ===================
+Total Clock Cycles Executed = 12893
+Total Instructions Executed = 4826
+Total Branch Instructions   = 1602
+Total Branch Mispredictions = 709
+
+----------------------------------------------
+Instruction Per Cycle (IPC) = 0.37
+Branch Misprediction Rate   = 44.26 %
+
+END of ISA tests
+
+Simulation complete via $finish(1) at time 51624 NS + 1
+../01_bench/scoreboard.sv:85         $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.09-s005: Exiting on Dec 16, 2025 at 22:41:25 +07  (total: 00:00:09)

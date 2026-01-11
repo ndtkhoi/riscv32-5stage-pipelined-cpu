@@ -1,0 +1,18 @@
+#e1(12Dec2025:06:04:07): source ./xcelium.d/env.d/env.history.12Dec2025_06_04_07
+s1(12Dec2025:06:04:07):  xrun -access +rwc -f ./flist.f 
+#e2(12Dec2025:06:04:45): source ./xcelium.d/env.d/env.history.12Dec2025_06_04_45
+s2(12Dec2025:06:04:45):  xrun -access +rwc -f ./flist.f 
+#e3(12Dec2025:06:05:56): source ./xcelium.d/env.d/env.history.12Dec2025_06_05_56
+s3(12Dec2025:06:05:56):  xrun -access +rwc -f ./flist.f 
+#e4(12Dec2025:06:09:28): source ./xcelium.d/env.d/env.history.12Dec2025_06_09_28
+s4(12Dec2025:06:09:28):  xrun -access +rwc -f ./flist.f 
+#e5(13Dec2025:08:38:26): source ./xcelium.d/env.d/env.history.13Dec2025_08_38_26
+s5(13Dec2025:08:38:26):  xrun -access +rwc -f ./flist.f 
+#e6(14Dec2025:21:21:20): source ./xcelium.d/env.d/env.history.14Dec2025_21_21_20
+s6(14Dec2025:21:21:20):  xrun -access +rwc -f ./flist.f 
+#e7(14Dec2025:21:24:22): source ./xcelium.d/env.d/env.history.14Dec2025_21_24_22
+s7(14Dec2025:21:24:22):  xrun -access +rwc -f ./flist.f 
+#e8(16Dec2025:22:41:41): source ./xcelium.d/env.d/env.history.16Dec2025_22_41_41
+s8(16Dec2025:22:41:41):  xrun -access +rwc -f ./flist.f 
+#e9(11Jan2026:12:56:35): source ./xcelium.d/env.d/env.history.11Jan2026_12_56_35
+s9(11Jan2026:12:56:35):  xrun -access +rwc -f ./flist.f 

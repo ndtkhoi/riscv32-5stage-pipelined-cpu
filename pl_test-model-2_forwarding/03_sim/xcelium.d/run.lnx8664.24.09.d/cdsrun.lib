@@ -1,0 +1,2 @@
+SOFTINCLUDE /home/yellow/ktmt_l01_l02_4/tools/eda/cadence/XCELIUM2409/tools/inca/files/cds.lib
+define worklib ../worklib

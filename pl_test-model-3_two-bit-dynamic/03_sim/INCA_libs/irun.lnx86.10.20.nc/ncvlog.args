@@ -1,0 +1,36 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx86.10.20.nc
+-RUNMODE
+-sv
+./../00_src/addsub32.sv
+./../00_src/alu.sv
+./../00_src/branch_predictor.sv
+./../00_src/brc.sv
+./../00_src/EX_MEM.sv
+./../00_src/hazard_fwd_unit.sv
+./../00_src/ID_EX.sv
+./../00_src/IF_ID.sv
+./../00_src/imm_gen.sv
+./../00_src/instruction_memory.sv
+./../00_src/lsu.sv
+./../00_src/memory.sv
+./../00_src/MEM_WB.sv
+./../00_src/pipelined.sv
+./../00_src/regfile.sv
+./../01_bench/driver.sv
+./../01_bench/scoreboard.sv
+./../01_bench/tbench.sv
+./../01_bench/tlib.svh
+-CDSLIB
+./INCA_libs/irun.lnx86.10.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx86.10.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx86.10.20.nc/xllibs
+-ALLOWUNBOUND

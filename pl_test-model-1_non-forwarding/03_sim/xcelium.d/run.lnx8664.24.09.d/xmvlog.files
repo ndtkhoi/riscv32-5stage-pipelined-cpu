@@ -1,0 +1,21 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/addsub32.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/alu.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/brc.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/EX_MEM.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/ID_EX.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/IF_ID.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/imm_gen.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/instruction_memory.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/lsu.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/memory.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/MEM_WB.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/pipelined.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/00_src/regfile.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/01_bench/driver.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/01_bench/scoreboard.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/01_bench/tbench.sv
+/home/yellow/ktmt_l01_l02_4/milestone3/pl_test-model-1_non-forwarding/01_bench/tlib.svh

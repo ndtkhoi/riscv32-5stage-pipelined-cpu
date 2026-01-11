@@ -1,0 +1,23 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+/home/buet/Desktop/4_gshare/00_src/addsub32.sv
+/home/buet/Desktop/4_gshare/00_src/alu.sv
+/home/buet/Desktop/4_gshare/00_src/branch_predictor.sv
+/home/buet/Desktop/4_gshare/00_src/brc.sv
+/home/buet/Desktop/4_gshare/00_src/EX_MEM.sv
+/home/buet/Desktop/4_gshare/00_src/hazard_fwd_unit.sv
+/home/buet/Desktop/4_gshare/00_src/ID_EX.sv
+/home/buet/Desktop/4_gshare/00_src/IF_ID.sv
+/home/buet/Desktop/4_gshare/00_src/imm_gen.sv
+/home/buet/Desktop/4_gshare/00_src/instruction_memory.sv
+/home/buet/Desktop/4_gshare/00_src/lsu.sv
+/home/buet/Desktop/4_gshare/00_src/memory.sv
+/home/buet/Desktop/4_gshare/00_src/MEM_WB.sv
+/home/buet/Desktop/4_gshare/00_src/pipelined.sv
+/home/buet/Desktop/4_gshare/00_src/regfile.sv
+/home/buet/Desktop/4_gshare/01_bench/driver.sv
+/home/buet/Desktop/4_gshare/01_bench/scoreboard.sv
+/home/buet/Desktop/4_gshare/01_bench/tbench.sv
+/home/buet/Desktop/4_gshare/01_bench/tlib.svh
